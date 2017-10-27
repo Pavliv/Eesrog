@@ -19,23 +19,37 @@ body {
 
 /*HEADER SECTION*/
 .header {
-	height: 145px;
+	height: 185px;
 	background-color: #7fb133;
+}
+.header img {
+	float: left;
+	margin: 20px 0 0 30px;
+}
+.header h1 {
+	padding-top: 110px;
+	color: #fff;
+	height: 100px;
+}
+.empty_box {
+	position: absolute;
+	top: 15px;
+	right: 350px;
 }
 
 /*ORDER SECTION*/
 .order {
-	text-align: center;
-	padding: 20px 0;
+	padding: 30px;
+	margin-left: 85px;
 }
 .order p {
+	float: left;
 	background-color: #f6bf3a;
-	border-radius: 10px;
-	padding: 4px 20px;
+	border-radius: 15px;
+	padding: 8px 45px;
 	margin: 0;
 	font-size: 14px;
 	color: #fff;
-	float: left;
 }
 .order .not-active-p {
 	background-color: #e1e1e1;
@@ -43,7 +57,8 @@ body {
 }
 .order .line {
 	border-radius: 0;
-	margin: 9px 0;
+	max-width: 200px;
+	margin: 12px 0;
 	padding: 3px 30px;
 }
 .order .line-silver {
@@ -52,8 +67,8 @@ body {
 
 /*MAIN HEADER SECTION*/
 .main-header {
-	margin-top: 20px;
 	background-color: #f0f0f0;
+	/*margin-bottom: 20px;*/
 }
 .main-header h2, h3 {
 	display: inline-block;
@@ -69,19 +84,53 @@ body {
 	padding-left: 20px;
 	color: #7fb133;
 }
+.main-header .rotate{
+	position: absolute;
+	margin: -15px 0 0 108px;
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Safari */
+	transform: rotate(45deg);
+	background-color: #7fb133;
+	height: 30px;
+	width: 30px;
+}
 
 /*MAIN SECTION*/
-.main-section button {
-	display: inline-block;
+.main-section {
+	background-color: #f8f8f8;
+}
+.main-section img {
+	margin-top: 70px;
+	background-color: #fff;
+	padding: 20px 75px;
+	border: 2px solid #7fb133;
+	border-radius: 150px;
+	/*float: left;*/
+}
+.main-section div{
+	position: relative;
+}
+.main-section input[type="radio"] {
 	margin: 10px;
 	height: 30px;
 	width: 30px;
 	border-radius: 15px;
-	border: none;
 }
-.main-section label {
+.main-section span {
+	position: absolute;
+	top: 18px;
 	font-size: 13px;
 	color: #9c9c9c;
+}
+.main-section label {
+	position: absolute;
+	left: 150px;
+	top: 18px;
+}
+.main-section input[type="number"] {
+	position: absolute;
+	left: 180px;
+	top: 10px;
 }
 .green-line {
 	height: 20px;
@@ -96,6 +145,7 @@ body {
 }
 .footer-nav ul {
 	list-style-type: none;
+	margin-right: 80px;
 }
 .footer-nav li {
 	display: inline-block;

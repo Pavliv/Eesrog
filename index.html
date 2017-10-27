@@ -9,7 +9,9 @@
 	<body>
 		<header class="header">
 			<div class="container">
+				<img src="images/logo.png" alt="Logo">
 				<h1>Esrog</h1>
+				<img src="images/box-empty.png" alt="Empty box" class="empty_box">
 			</div>
 		</header>
 
@@ -28,16 +30,30 @@
 		<section class="main-header">
 			<div class="container">
 				<h2>Mix</h2>
+				<div class="rotate"></div>
 				<h3>Yellow/Green Esrog (Israeli)</h3>
 			</div>
 		</section>
 
 		<section class="main-section">
 			<div class="container">
-				<form action="">
-					<div><button type="radio"></button><label>Premium</label></div>
-					<div><button type="radio"></button><label>Standard</label></div>
-					<div><button type="radio"></button><label>Basic</label></div>
+				<img src="images/lemon.png" alt="Lemon">
+				<form>
+					<div>
+						<input type="radio" name="type" value="Premium" checked=""><span>Premium</span>
+						<label for="number">$89</label>
+						<input type="number" name="quantity" min="0" max="9" value="1">
+					</div>
+					<div>
+						<input type="radio" name="type" value="Standard"><span>Standard</span>
+						<label for="number">$55</label>
+						<input type="number" name="quantity" min="0" max="9" value="0">
+					</div>
+					<div>
+						<input type="radio" name="type" value="Basic"><span>Basic</span>
+						<label for="number">$39</label>
+						<input type="number" name="quantity" min="0" max="9" value="0">
+					</div>
 				</form>
 			</div>
 		</section>
